@@ -1,10 +1,19 @@
-<wm-page data-ng-controller="MainPageController" name="mainpage">
-  <wm-left-panel content="leftnav" columnwidth="2" name="left_panel1"></wm-left-panel>
-  <wm-mobile-navbar name="mobile_navbar1" title="Title" backbuttoniconclass="fa fa-chevron-left" leftnavpaneliconclass="fa fa-bars">
-    <wm-button class="btn-transparent" caption="" type="button" name="AddButton" iconclass="glyphicon glyphicon-plus"></wm-button>
-  </wm-mobile-navbar>
-  <wm-content name="content1">
-    <wm-page-content columnwidth="12" name="page_content1"></wm-page-content>
-  </wm-content>
-  <wm-mobile-tabbar dataset="home,music,edit" name="mobile_tabbar1"></wm-mobile-tabbar>
+<wm-page data-ng-controller="MainPageController" name="page1">
+    <wm-mobile-navbar name="mobile_navbar1"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-tabs name="tabs1">
+                <wm-tabpane name="tabpane1">
+                    <wm-tabheader name="tabheader1"></wm-tabheader>
+                    <wm-tabcontent name="tabcontent1"></wm-tabcontent>
+                </wm-tabpane>
+            </wm-tabs>
+            <wm-accordion name="accordion1">
+                <wm-accordionpane name="accordionpane1">
+                    <wm-accordionheader name="accordionheader1"></wm-accordionheader>
+                    <wm-accordioncontent name="accordioncontent1"></wm-accordioncontent>
+                </wm-accordionpane>
+            </wm-accordion>
+        </wm-page-content>
+    </wm-content>
 </wm-page>
